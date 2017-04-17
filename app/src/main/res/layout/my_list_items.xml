@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:id="@+id/iv1"
+        android:layout_margin="10dp"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="?android:attr/textViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:id="@+id/name"
+            android:textStyle="bold"
+            android:textColor="#123"
+            android:textAllCaps="true"
+            android:fontFamily="serif"/>
+
+       <RatingBar
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/rating"
+           style="?android:attr/ratingBarStyleSmall"/>
+
+        <TextView
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year"
+            android:id="@+id/year"
+            android:textStyle="bold"
+            android:textColor="#123"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:fontFamily="serif"/>
+
+    </LinearLayout>
+
+</LinearLayout>
